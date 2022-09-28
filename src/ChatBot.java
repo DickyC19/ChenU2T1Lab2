@@ -27,6 +27,11 @@ public class ChatBot {
         final double METERS_PER_FOOT = 0.3048;
         return METERS_PER_FOOT * numFeet;
     }
+    // method that meters to miles and returns the miles
+    public double convertMetersToMiles(double numMeters) {
+        final double MILES_PER_METER = .000621371;
+        return MILES_PER_METER * numMeters;
+    }
 
     // method that prints information about favorite numbers
     public void favoriteNumber(int yourNumber) {
@@ -44,5 +49,7 @@ public class ChatBot {
     public String goodbye() {
         return "It was nice talking with you! Have a great day! Sincerely, " + name;
     }
+
+    public String favoriteAnimal() { return "My favorite animal is the cat"; }
 }
 

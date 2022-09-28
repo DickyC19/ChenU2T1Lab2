@@ -18,6 +18,8 @@ public class ChatBotRunner {
         int numFeet = scan.nextInt();
         scan.nextLine();
         System.out.println("There are " + debbie.convertFeetToMeters(numFeet) + " meters in " + numFeet + " feet.");
+        double numMeters = debbie.convertFeetToMeters(numFeet);
+        System.out.println("There are " + debbie.convertMetersToMiles(numMeters) + " miles in " + numMeters + " meters.");
 
         System.out.println();
         System.out.print("What is your favorite integer? ");
@@ -28,5 +30,11 @@ public class ChatBotRunner {
         System.out.println();
         int sum = debbie.addNumbers(numFeet, yourNumber, 7);
         System.out.println("The sum of my favorite number, your favorite number, and your number in feet is: " + sum);
+
+        System.out.println();
+        System.out.println(debbie.favoriteAnimal());
+
+        System.out.println();
+        System.out.println(debbie.goodbye());
     }
 }
